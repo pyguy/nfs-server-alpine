@@ -1,8 +1,5 @@
 FROM alpine:latest
-LABEL maintainer "Steven Iveson <steve@iveson.eu>"
-LABEL source "https://github.com/sjiveson/nfs-server-alpine"
-LABEL branch "master"
-COPY Dockerfile README.md /
+LABEL maintainer "Hamidreza Josheghani <hr.josheghani@gmail.com>"
 
 RUN apk add --no-cache --update --verbose nfs-utils bash iproute2 && \
     rm -rf /var/cache/apk /tmp /sbin/halt /sbin/poweroff /sbin/reboot && \
